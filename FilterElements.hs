@@ -22,7 +22,7 @@ v as
  | as == [] = [(-1)]
  | otherwise = as
 
-w :: Int -> [Int]
+w :: Int -> IO ()
 w n = getLine >>= \b -> map (read :: String -> Int) (words b)
 
 main = getLine >>= \a -> w (read :: String -> Int) a
