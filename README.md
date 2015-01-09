@@ -57,6 +57,7 @@ Ex: abcaaabbb -> abca3b3
 ======================================================================================================================================================================
 
 PrefixCompression.hs - Given two strings, extract the prefix from both strings and output the strings without the prefix along with the length.
+	
 	Input:
 	abcdefpr
 	abcpqr
