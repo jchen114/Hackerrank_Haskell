@@ -1,6 +1,26 @@
 # Hackerrank_Haskell
 Hackerrank problems using Haskell
 
+======================================================================================================================================================================
+
+FilterElements.hs - Given a list of N integers A = [a1, a2, ..., aN], you have to find those integers which are repeated at least K times. 
+In case no such element exists you have to print -1.
+If there are multiple elements in A which are repeated at least K times, then print these elements ordered by their first occurrence in the list
+Input:
+3
+9 2
+4 5 2 5 4 3 1 3 4
+9 4
+4 5 2 5 4 3 1 3 4
+10 2
+5 4 3 2 1 1 2 3 4 5
+Output:
+4 5 3
+-1
+5 4 3 2 1
+
+======================================================================================================================================================================
+
 areaVol.hs - Find the area under a curve and the volume when it is rotated around the x-axis. The curve is represented as f(x) = a1*x^b1 + a2*x^b2 + ... + an*x^bn. I solved this by finding the general forms of the area and volume and writing corresponding functions that would fill in the corresponding terms.
 
 Relevant functions:

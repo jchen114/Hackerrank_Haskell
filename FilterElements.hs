@@ -22,7 +22,28 @@ v as
  | as == [] = [(-1)]
  | otherwise = as
 
-w :: Int -> IO ()
-w n = getLine >>= \b -> map (read :: String -> Int) (words b)
+--w :: Int -> IO ()
+--w n = getLine >>= \b -> map (read :: String -> Int) (words b)
 
-main = getLine >>= \a -> w (read :: String -> Int) a
+myTest :: [Int] -> [String]
+myTest xs = ["output line " ++ show xs ++ "\n"]
+
+p :: [[Int]] -> IO ()
+p ass = putStrLn $ intercalate "\n" $ (map q ass)
+
+q :: [Int] -> [Char]
+q as = intercalate " " (map show as)
+
+main = do
+	--putStrLn "Enter number of test cases: "
+	ntests <- fmap read getLine :: IO Int
+	let	loop k acc | k > ntests = return $ reverse acc
+	   	loop k acc = do
+			--putStrLn $ "Enter size, and num" ++ show k ++ ": "
+			a <- fmap (map read . words) getLine :: IO [Int]
+			--putStrLn $ "Enter list of ints"
+			b <- fmap (map read . words) getLine :: IO [Int]
+			let output = v $ f b (last a)
+			loop (k+1) (output:acc)
+	allOutput <- loop 1 []
+	p allOutput
