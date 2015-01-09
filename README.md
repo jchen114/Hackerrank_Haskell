@@ -6,18 +6,19 @@ Hackerrank problems using Haskell
 FilterElements.hs - Given a list of N integers A = [a1, a2, ..., aN], you have to find those integers which are repeated at least K times. 
 In case no such element exists you have to print -1.
 If there are multiple elements in A which are repeated at least K times, then print these elements ordered by their first occurrence in the list
-Input:
-3
-9 2
-4 5 2 5 4 3 1 3 4
-9 4
-4 5 2 5 4 3 1 3 4
-10 2
-5 4 3 2 1 1 2 3 4 5
-Output:
-4 5 3
--1
-5 4 3 2 1
+	
+	Input:
+	3
+	9 2
+	4 5 2 5 4 3 1 3 4
+	9 4
+	4 5 2 5 4 3 1 3 4
+	10 2
+	5 4 3 2 1 1 2 3 4 5
+	Output:
+	4 5 3
+	-1
+	5 4 3 2 1
 
 ======================================================================================================================================================================
 
@@ -56,14 +57,13 @@ Ex: abcaaabbb -> abca3b3
 ======================================================================================================================================================================
 
 PrefixCompression.hs - Given two strings, extract the prefix from both strings and output the strings without the prefix along with the length.
-Ex:
-Input:
-abcdefpr
-abcpqr
-Output:
-3 abc
-5 defpr
-3 pqr
+	Input:
+	abcdefpr
+	abcpqr
+	Output:
+	3 abc
+	5 defpr
+	3 pqr
 
 ======================================================================================================================================================================
 
