@@ -1,7 +1,5 @@
 # Haskell problems on hackerrank
 
-======================================================================================================================================================================
-
 FilterElements.hs - Given a list of N integers A = [a1, a2, ..., aN], you have to find those integers which are repeated at least K times. 
 In case no such element exists you have to print -1.
 If there are multiple elements in A which are repeated at least K times, then print these elements ordered by their first occurrence in the list
