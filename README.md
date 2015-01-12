@@ -1,5 +1,16 @@
 # Haskell problems on hackerrank
 
+SumOfPowers.hs - Find the number of ways in which a given integer, X, can be expressed as the sum of the the Nth power of unique natural numbers. 
+
+We count the number of combinations that are less than the integer X. 
+
+Inside findNums', we ask if the current sum with the next number to the Nth power is greater than X. If it is, we crossed the threshold and went too far, and so we can just return 0.
+If the current sum with the next number to the Nth Power is greater equal to X, then we found a combination, so we return 1.
+Otherwise, we are less than the current number and so we will add two branches where one branch contains the next number to the Nth Power and the other does not. In this way, we can cover all of the possible sequences
+until one of the sequences gets too big, or it sums up to X.
+
+======================================================================================================================================================================
+
 FilterElements.hs - Given a list of N integers A = [a1, a2, ..., aN], you have to find those integers which are repeated at least K times. 
 In case no such element exists you have to print -1.
 If there are multiple elements in A which are repeated at least K times, then print these elements ordered by their first occurrence in the list
